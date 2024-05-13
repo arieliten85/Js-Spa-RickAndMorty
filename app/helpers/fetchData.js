@@ -1,4 +1,4 @@
-export const ajax = (props) => {
+export const fetchData = (props) => {
   const { url, callback } = props;
   fetch(url)
     .then((res) => res.json())

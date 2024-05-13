@@ -1,16 +1,15 @@
-import { ajax } from "./helpers/ajax.js";
 import api from "./helpers/urls.js";
-
 import { CardDetails } from "./components/card/CardDetails.js";
 import { ContainerCards } from "./components/card/ContainerCards.js";
 import { Rickverse } from "./components/Rickverse.js";
+import { fetchData } from "./helpers/fetchData.js";
 
 export const Router = () => {
   const { hash } = location;
   const path = hash.substring(2);
 
   if (path === "") {
-    ajax({
+    fetchData({
       url: api.allUsers,
       callback: (data) => {
         const section = document.querySelector("#section");
@@ -22,7 +21,7 @@ export const Router = () => {
     const section = document.querySelector("#section");
     section.innerHTML = Rickverse();
   } else {
-    ajax({
+    fetchData({
       url: api.findOne + localStorage.getItem("id"),
       callback: (data) => {
         document.querySelector("#section").append(CardDetails(data));
