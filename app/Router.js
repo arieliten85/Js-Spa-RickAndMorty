@@ -18,15 +18,13 @@ export const Router = () => {
         section.append(ContainerCards(data));
       },
     });
-  } else if (path === "Rickverse") {
+  } else if (path === "aboutTheShow") {
     const section = document.querySelector("#section");
     section.innerHTML = Rickverse();
-    section.setAttribute("class");
   } else {
     ajax({
       url: api.findOne + localStorage.getItem("id"),
       callback: (data) => {
-        console.log("id", data);
         document.querySelector("#section").append(CardDetails(data));
       },
     });

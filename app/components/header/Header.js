@@ -10,7 +10,7 @@ export const Header = () => {
   );
   nav.innerHTML = `
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Rick and Morty</a>
+      <a class="navbar-brand" href="#">Rickverse</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -20,7 +20,7 @@ export const Header = () => {
             <a class="nav-link active" aria-current="page" href="#/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#/Rickverse">Rickverse</a>
+            <a class="nav-link" href="#/aboutTheShow">About the Show</a>
           </li>
         </ul>
       </div>
