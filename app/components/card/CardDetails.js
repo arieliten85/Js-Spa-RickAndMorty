@@ -13,7 +13,7 @@ export const CardDetails = (props) => {
       <p class="card-text">Gender: ${gender}</p>
       <p class="card-text">Origin: ${origin.name}</p>
       <p class="card-text">Location: ${location.name}</p>
-      <a href="#/" class="btn btn-primary">Back</a>
+      <a href="#/" class="btn btn-info text-white">Back</a>
     </div>
   `;
 

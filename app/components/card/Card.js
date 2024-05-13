@@ -15,7 +15,7 @@ export const Card = (props) => {
     <div class="card-body">
       <h5 class="card-title">${name}</h5>
       <p class="card-text">${species}</p>
-      <a href="#/${name}" id=${id} class="btn btn-primary">See more</a>
+      <a href="#/${name}" id=${id} class="btn btn-info text-white">See more</a>
     </div>
   `;
 

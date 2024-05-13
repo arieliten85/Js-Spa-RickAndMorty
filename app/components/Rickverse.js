@@ -31,7 +31,7 @@ export const Rickverse = () => {
   });
 
   const button = document.createElement("a");
-  button.classList.add("btn", "btn-primary", "mx-4", "float-end");
+  button.classList.add("btn", "btn-info", "text-white", "mx-4", "float-end");
   button.textContent = "Back";
   button.href = "#/";
 
