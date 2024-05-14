@@ -5,7 +5,7 @@ export const Card = (props) => {
   div.style.width = "18rem";
 
   document.addEventListener("click", (e) => {
-    if (e.target.className == "btn btn-primary") {
+    if (e.target.className == "btn btn-info text-white") {
       localStorage.setItem("id", e.target.id);
     }
   });

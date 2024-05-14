@@ -1,8 +1,8 @@
 import api from "./helpers/urls.js";
-import { CardDetails } from "./components/card/CardDetails.js";
 import { ContainerCards } from "./components/card/ContainerCards.js";
 import { Rickverse } from "./components/Rickverse.js";
 import { fetchData } from "./helpers/fetchData.js";
+import { CardDetails } from "./components/Card/CardDetails.js";
 
 export const Router = () => {
   const { hash } = location;
@@ -17,7 +17,8 @@ export const Router = () => {
         section.append(ContainerCards(data));
       },
     });
-  } else if (path === "aboutTheShow") {
+  }
+  if (path === "aboutTheShow") {
     const section = document.querySelector("#section");
     section.innerHTML = Rickverse();
   } else {
